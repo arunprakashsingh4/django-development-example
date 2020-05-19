@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+    <a href="{% url 'basic_app:other'%}">other</a>
+    <h1> THIS IS A INDEX PAGE</h1>
+    <h1><b>{{text}}</b> ==> we are not inserting  template filter.</h1>
+    <h1><b>{{text|upper}}</b> ==> we are inserting <mark><b><u>upper</u></b></mark> built in template filter.</h1>
+
+    <h2><b>{{text|cut:"hello"}}</b> ==>(this is a custom filter,custom filter name is <mark><b><u>cut</u></b></mark> , code of custom filter go to/ templatetag/__init__.py) </h2>
+    <h1>{{number|add:"99"}} ==> we are inserting built in template filter name is <mark><b><u>add : "99 "</u></b></mark> </h1>
+
+
+{% endblock %}

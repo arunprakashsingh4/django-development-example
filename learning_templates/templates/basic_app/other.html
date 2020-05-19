@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html"%}
+{% block body_block %}
+    <h1> THIS IS A OTHER PAGE</h1>
+   <a href="{% url 'basic_app:relative' %}"> LINK TO RELATIVE PAGE</a><br>
+   <a href="{% url 'admin:index' %}">LINK TO ADMIN PAGE</a><br>
+   <a href="{% url 'index' %}">LINK TO INDEX PAGE</a>
+   <h2>this is an examplet of template inheritance</h2>
+{% endblock %}   
