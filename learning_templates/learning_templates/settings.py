@@ -25,7 +25,7 @@ SECRET_KEY = '_94xabmw_9(b6lkn$=x#_1s5+nk65$l+_!$d1=cy*rcxeo)!n)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['arunprakash.pythonanywhere.com']
 
 
 # Application definition
